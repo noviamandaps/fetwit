@@ -46,11 +46,20 @@
                 <div class="w-full md:w-1/2 px-2 mb-4">
                     <!-- Individual Comment -->
                     <div class="bg-secondary rounded-lg p-4 h-full">
-                        <div class="flex items-center mb-2">
-                            <div>
-                                <p class="font-bold">Alice Smith</p>
-                                <p class="text-username text-sm">@alice • 2 hours ago</p>
+                        <div class="flex justify-between items-start mb-2">
+                            <div class="flex items-center">
+                                <div>
+                                    <p class="font-bold">Alice Smith</p>
+                                    <p class="text-username text-sm">@alice • 2 hours ago</p>
+                                </div>
                             </div>
+                            <button class="text-red-500 hover:text-red-700 transition duration-300 ease-in-out">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                                </svg>
+                            </button>
                         </div>
                         <p class="text-white">This is a fascinating topic! I'm curious about how AI will impact job
                             prospects for web developers in the future.</p>
@@ -60,43 +69,69 @@
                 <div class="w-full md:w-1/2 px-2 mb-4">
                     <!-- Individual Comment -->
                     <div class="bg-secondary rounded-lg p-4 h-full">
-                        <div class="flex items-center mb-2">
-                            <div>
-                                <p class="font-bold">Bob Johnson</p>
-                                <p class="text-username text-sm">@bob • 1 day ago</p>
+                        <div class="flex justify-between items-start mb-2">
+                            <div class="flex items-center">
+                                <div>
+                                    <p class="font-bold">Alice Smith</p>
+                                    <p class="text-username text-sm">@alice • 2 hours ago</p>
+                                </div>
                             </div>
+                            <button class="text-red-500 hover:text-red-700 transition duration-300 ease-in-out">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                                </svg>
+                            </button>
                         </div>
-                        <p class="text-white">Great article! I'd love to see more examples of AI being used in
-                            real-world web development scenarios.</p>
+                        <p class="text-white">This is a fascinating topic! I'm curious about how AI will impact job
+                            prospects for web developers in the future.</p>
                     </div>
                 </div>
+                <div class="w-full md:w-1/2 px-2 mb-4">
+                    <!-- Individual Comment -->
+                    <div class="bg-secondary rounded-lg p-4 h-full">
+                        <div class="flex justify-between items-start mb-2">
+                            <div class="flex items-center">
+                                <div>
+                                    <p class="font-bold">Alice Smith</p>
+                                    <p class="text-username text-sm">@alice • 2 hours ago</p>
+                                </div>
+                            </div>
+                            <button class="text-red-500 hover:text-red-700 transition duration-300 ease-in-out">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                                </svg>
+                            </button>
+                        </div>
+                        <p class="text-white">This is a fascinating topic! I'm curious about how AI will impact job
+                            prospects for web developers in the future.</p>
+                    </div>
+                </div>
+
 
                 <div class="w-full md:w-1/2 px-2 mb-4">
                     <!-- Individual Comment -->
                     <div class="bg-secondary rounded-lg p-4 h-full">
-                        <div class="flex items-center mb-2">
-                            <div>
-                                <p class="font-bold">Bob Johnson</p>
-                                <p class="text-username text-sm">@bob • 1 day ago</p>
+                        <div class="flex justify-between items-start mb-2">
+                            <div class="flex items-center">
+                                <div>
+                                    <p class="font-bold">Alice Smith</p>
+                                    <p class="text-username text-sm">@alice • 2 hours ago</p>
+                                </div>
                             </div>
+                            <button class="text-red-500 hover:text-red-700 transition duration-300 ease-in-out">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                                </svg>
+                            </button>
                         </div>
-                        <p class="text-white">Great article! I'd love to see more examples of AI being used in
-                            real-world web development scenarios.</p>
-                    </div>
-                </div>
-
-
-                <div class="w-full md:w-1/2 px-2 mb-4">
-                    <!-- Another Comment -->
-                    <div class="bg-secondary rounded-lg p-4 h-full">
-                        <div class="flex items-center mb-2">
-                            <div>
-                                <p class="font-bold">Charlie Brown</p>
-                                <p class="text-username text-sm">@charlie • 3 days ago</p>
-                            </div>
-                        </div>
-                        <p class="text-white">I wonder how AI will change the way we approach responsive design and
-                            accessibility in web development.</p>
+                        <p class="text-white">This is a fascinating topic! I'm curious about how AI will impact job
+                            prospects for web developers in the future.</p>
                     </div>
                 </div>
 

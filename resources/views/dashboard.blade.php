@@ -87,13 +87,11 @@
                                         <p class="text-sm font-semibold group-hover:text-black">Read More</p>
                                     </a>
                                 </div>
-
                                 <p class="pl-[55px] py-2.5 leading-7 text-base">
                                     The company reportedly began exploring a sale in May, amid poor reviews and poorer
                                     sales.
                                     Beleaguered startup Humane drops Ai Pin price by $200. Humane on Wednesday announced
-                                    a
-                                    $200
+                                    a $200
                                     price cut to its flagship product, the Ai Pin. The Bay Area startup, founded by two
                                     former Apple
                                     executives, has reportedly struggled to sell the product, which
@@ -119,8 +117,6 @@
                                     </div>
                                 </div>
                             </div>
-
-
                         </div>
 
 

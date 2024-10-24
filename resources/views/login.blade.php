@@ -32,13 +32,12 @@
 
             <form id="formManager">
                 <div class="flex flex-col gap-4">
-
                     <div class="flex flex-col gap-2">
-                        <label for="username" class="block text-sm sm:text-base font-medium">Username</label>
+                        <label for="username" class="block text-sm sm:text-base font-medium">Email</label>
                         <div class="flex items-center justify-start rounded-full bg-secondary">
                             <img src="/images/crown-blur.svg" alt="lock" srcset=""
                                 class="w-5 h-5 sm:w-6 sm:h-6 ml-3 sm:ml-4 mr-2 sm:mr-3">
-                            <input type="text" placeholder="Username" id="username"
+                            <input name="email" type="text" placeholder="Email" id="username"
                                 class="w-full h-10 sm:h-[48px] py-2 sm:py-3 text-white bg-secondary text-sm sm:text-base placeholder:text-sm sm:placeholder:text-base placeholder:text-paragraph rounded-full focus:outline-none focus:ring-0 focus:font-semibold" />
                         </div>
                     </div>
@@ -48,7 +47,7 @@
                         <div class="flex items-center justify-start rounded-full bg-secondary">
                             <img src="/images/lock.svg" alt="lock" srcset=""
                                 class="w-5 h-5 sm:w-6 sm:h-6 ml-3 sm:ml-4 mr-2 sm:mr-3">
-                            <input type="password" placeholder="Password" id="password"
+                            <input name="password" type="password" placeholder="Password" id="password"
                                 class="w-full h-10 sm:h-[48px] py-2 sm:py-3 text-white bg-secondary text-sm sm:text-base placeholder:text-sm sm:placeholder:text-base placeholder:text-paragraph rounded-full focus:outline-none focus:ring-0 focus:font-semibold" />
                         </div>
                     </div>
