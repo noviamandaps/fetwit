@@ -14,42 +14,50 @@
     <title>Document</title>
 </head>
 
-<body class="max-w-7xl mx-auto bg-primary text-white">
+<body class="max-w-7xl mx-auto bg-primary text-white font-poppins">
 
-    <section class="px-[150px] w-full items-center flex justify-center items-center gap-x-[100px] h-screen">
-        <div class="w-full h-fit">
-            <div class="pb-[50px] flex flex-col gap-y-1">
-                <h2 class="font-bold text-[38px]">Happening Today</h2>
-                <p class="">What’s trend, what’s good for you.</p>
-                <div id="instantFeedback"
-                    class="mt-3 instant-feedback flex flex-row p-3 rounded-xl text-base bg-red-500 text-white font-bold">
-                </div>
+    <section
+        class="px-4 sm:px-6 md:px-8 lg:px-[150px] w-full flex flex-col lg:flex-row justify-center items-center gap-y-8 lg:gap-x-[100px] min-h-screen py-8">
+        <!-- Logo untuk tampilan mobile -->
+        <div class="lg:hidden w-full text-center mb-8">
+            <h1 class="font-extrabold text-5xl sm:text-6xl md:text-7xl">
+                twittr.
+            </h1>
+        </div>
+        <div class="w-full lg:w-1/2">
+            <div class="pb-6 lg:pb-[50px] flex flex-col gap-y-1">
+                <h2 class="font-bold text-2xl sm:text-3xl lg:text-[38px]">Happening Today</h2>
+                <p class="text-sm sm:text-base">What's trend, what's good for you.</p>
             </div>
 
             <form id="formManager">
                 <div class="flex flex-col gap-4">
 
                     <div class="flex flex-col gap-2">
-                        <label for="username" class="block text-base font-medium">Username</label>
+                        <label for="username" class="block text-sm sm:text-base font-medium">Username</label>
                         <div class="flex items-center justify-start rounded-full bg-secondary">
-                            <img src="/images/crown-blur.svg" alt="lock" srcset="" class="w-6 h-6 ml-4 mr-3">
+                            <img src="/images/crown-blur.svg" alt="lock" srcset=""
+                                class="w-5 h-5 sm:w-6 sm:h-6 ml-3 sm:ml-4 mr-2 sm:mr-3">
                             <input type="text" placeholder="Username" id="username"
-                                class="w-[484px] h-[48px] py-3 text-white bg-secondary text-base placeholder:text-base placeholder:text-paragraph rounded-full focus:outline-none focus:ring-0 focus:font-semibold" />
+                                class="w-full h-10 sm:h-[48px] py-2 sm:py-3 text-white bg-secondary text-sm sm:text-base placeholder:text-sm sm:placeholder:text-base placeholder:text-paragraph rounded-full focus:outline-none focus:ring-0 focus:font-semibold" />
                         </div>
                     </div>
 
                     <div class="flex flex-col gap-2">
-                        <label for="password" class="block text-base font-medium">Password</label>
+                        <label for="password" class="block text-sm sm:text-base font-medium">Password</label>
                         <div class="flex items-center justify-start rounded-full bg-secondary">
-                            <img src="/images/lock.svg" alt="lock" srcset="" class="w-6 h-6 ml-4 mr-3">
+                            <img src="/images/lock.svg" alt="lock" srcset=""
+                                class="w-5 h-5 sm:w-6 sm:h-6 ml-3 sm:ml-4 mr-2 sm:mr-3">
                             <input type="password" placeholder="Password" id="password"
-                                class="w-[484px] h-[48px] py-3 text-white bg-secondary text-base placeholder:text-base placeholder:text-paragraph rounded-full focus:outline-none focus:ring-0 focus:font-semibold" />
+                                class="w-full h-10 sm:h-[48px] py-2 sm:py-3 text-white bg-secondary text-sm sm:text-base placeholder:text-sm sm:placeholder:text-base placeholder:text-paragraph rounded-full focus:outline-none focus:ring-0 focus:font-semibold" />
                         </div>
                     </div>
 
-                    <div class="flex flex-col gap-3.5 mt-[50px]">
-                        <button><span class="btn-blue cursor-pointer text-base font-bold">Sign In</span></button>
-                        <a href="register.html"><span class="btn-white cursor-pointer text-base font-bold">Create New
+                    <div class="flex flex-col gap-3.5 mt-6 lg:mt-[50px]">
+                        <button><span class="btn-blue cursor-pointer text-sm sm:text-base font-bold">Sign
+                                In</span></button>
+                        <a href="register.html"><span
+                                class="btn-white cursor-pointer text-sm sm:text-base font-bold">Create New
                                 Account</span></a>
                     </div>
 
@@ -57,7 +65,8 @@
             </form>
         </div>
 
-        <div class=" w-fit h-fit">
+        <!-- Logo untuk tampilan desktop -->
+        <div class="hidden lg:block w-fit h-fit">
             <h1 class="font-extrabold text-[120px]">
                 twittr.
             </h1>
@@ -83,7 +92,5 @@
     </script>
 
 </body>
-
-
 
 </html>
