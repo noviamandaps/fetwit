@@ -81,9 +81,10 @@
                                 <p class="text-username text-sm">@buildwithangga • 5 Mar 2024</p>
                             </div>
                         </div>
-                        <div class="flex justify-center items-center rounded-full px-3 py-1.5 border-line border-2 gap-1.5">
-                            <p class="text-sm font-semibold">🤩 Happy</p>
-                        </div>
+                        <a href="{{ route('article') }}"
+                            class="inline-flex justify-center items-center rounded-full px-3 py-1.5 border-2 border-line gap-1.5 transition-colors duration-300 ease-in-out hover:bg-white group">
+                            <p class="text-sm font-semibold group-hover:text-black">Read More</p>
+                        </a>
                     </div>
 
                     <p class="pl-[55px] py-2.5 leading-7 text-base">
@@ -128,10 +129,10 @@
                                 <p class="text-username text-sm">@buildwithangga • 5 Mar 2024</p>
                             </div>
                         </div>
-                        <div
-                            class="flex justify-center items-center rounded-full px-3 py-1.5 border-line border-2 gap-1.5">
-                            <p class="text-sm font-semibold">🤩 Happy</p>
-                        </div>
+                        <a href="{{ route('article') }}"
+                            class="inline-flex justify-center items-center rounded-full px-3 py-1.5 border-2 border-line gap-1.5 transition-colors duration-300 ease-in-out hover:bg-white group">
+                            <p class="text-sm font-semibold group-hover:text-black">Read More</p>
+                        </a>
                     </div>
 
                     <p class="pl-[55px] py-2.5 leading-7 text-base">
@@ -176,10 +177,10 @@
                                 <p class="text-username text-sm">@buildwithangga • 5 Mar 2024</p>
                             </div>
                         </div>
-                        <div
-                            class="flex justify-center items-center rounded-full px-3 py-1.5 border-line border-2 gap-1.5">
-                            <p class="text-sm font-semibold">🤩 Happy</p>
-                        </div>
+                        <a href="{{ route('article') }}"
+                            class="inline-flex justify-center items-center rounded-full px-3 py-1.5 border-2 border-line gap-1.5 transition-colors duration-300 ease-in-out hover:bg-white group">
+                            <p class="text-sm font-semibold group-hover:text-black">Read More</p>
+                        </a>
                     </div>
 
                     <p class="pl-[55px] py-2.5 leading-7 text-base">
