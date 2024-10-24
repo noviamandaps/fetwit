@@ -30,15 +30,15 @@
                 <p class="text-sm sm:text-base">What's trend, what's good for you.</p>
             </div>
 
-            <form id="formManager">
+            <form action="{{ route('api.login') }}" method="post" id="formManager">
+                @csrf
                 <div class="flex flex-col gap-4">
-
                     <div class="flex flex-col gap-2">
-                        <label for="username" class="block text-sm sm:text-base font-medium">Username</label>
+                        <label for="email" class="block text-sm sm:text-base font-medium">Email</label>
                         <div class="flex items-center justify-start rounded-full bg-secondary">
                             <img src="/images/crown-blur.svg" alt="lock" srcset=""
                                 class="w-5 h-5 sm:w-6 sm:h-6 ml-3 sm:ml-4 mr-2 sm:mr-3">
-                            <input type="text" placeholder="Username" id="username"
+                            <input type="text" placeholder="Email" id="email" name="email"
                                 class="w-full h-10 sm:h-[48px] py-2 sm:py-3 text-white bg-secondary text-sm sm:text-base placeholder:text-sm sm:placeholder:text-base placeholder:text-paragraph rounded-full focus:outline-none focus:ring-0 focus:font-semibold" />
                         </div>
                     </div>
@@ -48,17 +48,14 @@
                         <div class="flex items-center justify-start rounded-full bg-secondary">
                             <img src="/images/lock.svg" alt="lock" srcset=""
                                 class="w-5 h-5 sm:w-6 sm:h-6 ml-3 sm:ml-4 mr-2 sm:mr-3">
-                            <input type="password" placeholder="Password" id="password"
+                            <input type="password" placeholder="Password" id="password" name="password"
                                 class="w-full h-10 sm:h-[48px] py-2 sm:py-3 text-white bg-secondary text-sm sm:text-base placeholder:text-sm sm:placeholder:text-base placeholder:text-paragraph rounded-full focus:outline-none focus:ring-0 focus:font-semibold" />
                         </div>
                     </div>
 
                     <div class="flex flex-col gap-3.5 mt-6 lg:mt-[50px]">
-                        <button><span class="btn-blue cursor-pointer text-sm sm:text-base font-bold">Sign
+                        <button type="submit"><span class="btn-blue cursor-pointer text-sm sm:text-base font-bold">Sign
                                 In</span></button>
-                        <a href="register.html"><span
-                                class="btn-white cursor-pointer text-sm sm:text-base font-bold">Create New
-                                Account</span></a>
                     </div>
 
                 </div>

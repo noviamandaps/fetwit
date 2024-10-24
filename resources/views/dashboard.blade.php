@@ -67,63 +67,50 @@
                             </form>
                         </div>
 
-                        <div id="twittsWrapper">
-                            <div class="bg-primary p-4 border-b-2 border-line">
-                                <div class="flex items-center justify-between">
-                                    <div class="flex items-center justify-start">
-                                        <img src="/images/bwa-profile.png" alt="search" srcset=""
-                                            class="object-cover w-[46px] h-[46px] rounded-full">
-                                        <div class="pl-2">
-                                            <div class="flex gap-1">
-                                                <p class="text-base font-bold inline-block">Angga Risky <img
-                                                        src="/images/verify.png" alt="" srcset=""
-                                                        class="inline w-5 h-5 rounded-full"> </p>
+                        @foreach ($data as $article)
+                            <div id="twittsWrapper">
+                                <div class="bg-primary p-4 border-b-2 border-line">
+                                    <div class="flex items-center justify-between">
+                                        <div class="flex items-center justify-start">
+                                            <div class="pl-2">
+                                                <div class="flex gap-1">
+                                                    <p class="text-base font-bold inline-block">
+                                                        {{ $article->user_name }} <img src="/images/verify.png"
+                                                            alt="" srcset=""
+                                                            class="inline w-5 h-5 rounded-full"> </p>
+                                                </div>
+                                                <p class="text-username text-md pt-2">{{ $article->title }}</p>
                                             </div>
-                                            <p class="text-username text-md pt-2">AI TECHNOLOGI</p>
                                         </div>
+                                        <a href="{{ route('api.getArticle', ['article_id' => $article->id]) }}"
+                                            class="inline-flex justify-center items-center rounded-full px-3 py-1.5 border-2 border-line gap-1.5 transition-colors duration-300 ease-in-out hover:bg-white group">
+                                            <p class="text-sm font-semibold group-hover:text-black">Read More</p>
+                                        </a>
                                     </div>
-                                    <a href="{{ route('article') }}"
-                                        class="inline-flex justify-center items-center rounded-full px-3 py-1.5 border-2 border-line gap-1.5 transition-colors duration-300 ease-in-out hover:bg-white group">
-                                        <p class="text-sm font-semibold group-hover:text-black">Read More</p>
-                                    </a>
-                                </div>
 
-                                <p class="pl-[55px] py-2.5 leading-7 text-base">
-                                    The company reportedly began exploring a sale in May, amid poor reviews and poorer
-                                    sales.
-                                    Beleaguered startup Humane drops Ai Pin price by $200. Humane on Wednesday announced
-                                    a
-                                    $200
-                                    price cut to its flagship product, the Ai Pin. The Bay Area startup, founded by two
-                                    former Apple
-                                    executives, has reportedly struggled to sell the product, which
-                                </p>
+                                    <p class="pl-[55px] py-2.5 leading-7 text-base">
+                                        {{ $article->description }}
+                                    </p>
 
-                                <div class="flex justify-between items-center pl-[55px] w-[484px]">
-                                    <div class="flex justify-center items-center gap-2.5 pr-[250px]">
-                                        <a href="#"
-                                            class="cursor flex justify-start items-center w-[93px] gap-1.5">
-                                            <img class="like-icon" src="/images/heart.svg" alt="heart">
-                                            <p class="text-sm font-normal text-like">0 Likes
-                                            </p>
-                                        </a>
-                                        <a href="#"
-                                            class="cursor flex justify-start items-center w-[93px] gap-1.5">
-                                            <img src="/images/trash.svg" alt="heart">
-                                            <p class="text-sm font-normal text-username">Delete</p>
-                                        </a>
-                                        <a href="#" class="flex justify-start items-center w-[93px] gap-1.5">
-                                            <img src="/images/warning-2.svg">
-                                            <p class="text-sm font-normal text-username">Report</p>
-                                        </a>
+                                    <div class="flex justify-between items-center pl-[55px] w-[484px]">
+                                        <div class="flex justify-center items-center gap-2.5 pr-[250px]">
+                                            <a href="#"
+                                                class="cursor flex justify-start items-center w-[93px] gap-1.5">
+                                                <img class="like-icon" src="/images/heart.svg" alt="heart">
+                                                <p class="text-sm font-normal text-like">
+                                                    {{ $article->like_articles_count }} Likes
+                                                </p>
+                                            </a>
+                                            <a href="#" class="flex justify-start items-center w-[93px] gap-1.5">
+                                                <img src="/images/warning-2.svg">
+                                                <p class="text-sm font-normal text-username text-nowrap">
+                                                    {{ $article->comments_count }} Comment</p>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-
-
-                        </div>
-
-
+                        @endforeach
                     </div>
 
                     <!-- Browse -->

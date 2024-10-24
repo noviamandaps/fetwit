@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use GuzzleHttp\Client;
+use GuzzleHttp\Exception\RequestException;
 
 class AuthController extends Controller
 {
@@ -19,27 +20,45 @@ class AuthController extends Controller
         return view('login');
     }
 
-    public function submit(Request $request)
+    public function submit(Request $req)
     {
-        $client = new Client();
         try {
-            $loginRequest = $this->client->post('', [
-                'form_params' => [
-                    "email" => $request->email,
-                    "password" => $request->password,
-                ]
+            $response = $this->client->post("http://127.0.0.1:8000/api/auth/login", [
+                'headers' => [
+                    'Accept' => 'application/json',
+                    'Content-Type' => 'application/json'
+                ],
+                'body' => json_encode([
+                    "email" => $req->email,
+                    "password" => $req->password
+                ])
             ]);
 
-            $response = json_decode($loginRequest->getBody());
-            $data = $response->data;
-            if ($response->status == true) {
-                $request->session()->put('LoginSession', $data->token);
-                return redirect()->intended('home')->with(['message' => 'Login successful.']);
+            $jsonResponse = json_decode($response->getBody());
+            // dd($jsonResponse);
+            $res = [];
+            if ($jsonResponse->status) {
+                $req->session()->put('LoginSession', $jsonResponse->data->token);
+                $req->session()->put('UserId', $jsonResponse->data->user->id);
+
+                $res = [
+                    'type' => 'success',
+                    'message' => 'Berhasil login!',
+                ];
+                return redirect(route('dashboard'))->with($res);
             } else {
-                return redirect()->back()->with(['error' => 'Invalid credentials. Please try again.']);
+                $res = [
+                    'type' => 'error',
+                    'message' => 'Gagal login, username atau password salah!',
+                ];
+                return redirect(route('login'))->with($res);
             }
-        } catch (\Throwable $th) {
-            return redirect()->back()->with(['error' => 'An error occurred. Please try again.']);
+        } catch (RequestException $th) {
+            $res = [
+                'type' => 'error',
+                'message' => json_decode($th->getResponse()->getBody()->getContents())->message ?? 'Terjadi kesalahan!',
+            ];
+            return redirect()->route('login')->with($res);
         }
     }
 

@@ -46,7 +46,7 @@
         </a>
 
 
-        <form action="{{ route('dashboard') }}" method="POST">
+        <form action="{{ route('api.logout') }}" method="POST">
             @csrf
             <button type="submit"
                 class="flex items-center gap-4 px-4 py-2 rounded-full transition duration-300 ease-in-out hover:bg-red-600 group w-full">

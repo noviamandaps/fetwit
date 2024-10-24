@@ -22,6 +22,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
+Route::post('/be/login', [AuthController::class, 'submit'])->name('api.login');
+Route::post('/be/logout', [AuthController::class, 'logout'])->name('api.logout');
+Route::get('/be/article/{article_id}', [ArticleController::class, 'getArticle'])->name('api.getArticle');
+Route::post('/be/comment/', [ArticleController::class, 'createComment'])->name('api.createComment');
+
 Route::get('/login', [AuthController::class, 'index'])->name('login');
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
