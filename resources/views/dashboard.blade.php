@@ -82,7 +82,7 @@
                                             <p class="text-username text-md pt-2">AI TECHNOLOGI</p>
                                         </div>
                                     </div>
-                                    <a href="{{ route('content') }}"
+                                    <a href="{{ route('article') }}"
                                         class="inline-flex justify-center items-center rounded-full px-3 py-1.5 border-2 border-line gap-1.5 transition-colors duration-300 ease-in-out hover:bg-white group">
                                         <p class="text-sm font-semibold group-hover:text-black">Read More</p>
                                     </a>
