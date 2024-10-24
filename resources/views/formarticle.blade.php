@@ -1,6 +1,7 @@
 @extends('layouts.layout')
 @section('content')
     {{-- CONTENT FORM --}}
+
     <div class="container mx-auto px-4 py-8 ">
         <div class="w-full bg-secondary rounded-lg p-6">
             <h2 class="text-2xl font-bold mb-6">Create New Article</h2>

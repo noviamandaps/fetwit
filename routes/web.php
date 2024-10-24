@@ -5,7 +5,7 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FormController;
-use App\Http\Controllers\ContentController;
+use App\Http\Controllers\ArticleController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,4 +26,4 @@ Route::get('/login', [AuthController::class, 'index'])->name('login');
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
 Route::get('/form', [FormController::class, 'index'])->name('form');
-Route::get('/content', [ContentController::class, 'index'])->name('content');
+Route::get('/article', [ArticleController::class, 'index'])->name('article');

@@ -10,7 +10,7 @@
             <p class="text-xl group-hover:text-white">Home</p>
         </a>
 
-        <a href="{{ route('content') }}"
+        <a href="{{ route('article') }}"
             class="flex items-center gap-4 px-4 py-2 rounded-full transition duration-300 ease-in-out hover:bg-blue-600 group">
             <img src="/images/search-normal.svg" alt="" class="w-7 h-7">
             <p class="text-xl group-hover:text-white">Content</p>
